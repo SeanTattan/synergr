@@ -12,13 +12,6 @@ Install directly from GitHub using devtools. All dependencies are declared in th
 # install.packages("devtools")
 devtools::install_github("https://github.com/SeanTattan/synergr")
 ```
-
-To also install suggested packages (needed for running tests or building vignettes):
-
-```r
-devtools::install_github("https://github.com/SeanTattan/synergr", dependencies = TRUE)
-```
-
 ---
 
 ## Core Workflow
