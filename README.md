@@ -1,4 +1,4 @@
-# Drug Synergy Analysis — R Package Reference
+# synergy: Drug Synergy Analysis
 
 A toolkit for quantifying and visualising drug combination synergy using the **Loewe additivity model**. Fits four-parameter log-logistic (4PL) dose-response curves to single-agent data, computes Combination Index (CI) values for every combination point, and renders the results as a heatmap, normalised isobologram, or interactive 3D surface.
 
