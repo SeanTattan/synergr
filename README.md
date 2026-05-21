@@ -36,7 +36,7 @@ plot_surface(result)
 
 ### `analyse_synergy()`
 
-The main entry point. Fits 4PL models to single-agent arms and calculates Loewe CI values for all combination points.
+Fits 4PL models to single-agent arms and calculates Loewe CI values for all combination points.
 
 ```r
 analyse_synergy(data, drug_a, drug_b, response)
@@ -130,20 +130,6 @@ plot_surface(x, ...)
 **Returns** a `plotly` object.
 
 > Requires combination data to form a regular grid; sparse or irregular designs may produce gaps in the surface.
-
----
-
-## Internal Functions
-
-These are not exported but are documented here for transparency.
-
-| Function                  | Description                                                              |
-|---------------------------|--------------------------------------------------------------------------|
-| `fit_single_agents(df)`   | Fits `drc::LL.4()` 4PL curves to Drug A–only and Drug B–only rows       |
-| `calculate_loewe_ci()`    | Computes `Dx_A`, `Dx_B`, and `CI = DrugA/Dx_A + DrugB/Dx_B` per row   |
-| `inverse_4pl()`           | Inverts a 4PL curve: given a response, returns the equieffective dose    |
-| `extract_4pl_params()`    | Extracts slope (`b`), min (`c`), max (`d`), IC50 (`e`) from a `drm` fit |
-| `validate_synergy_input()`| Checks that `DrugA`, `DrugB`, `Response` columns are present            |
 
 ---
 
